@@ -1,0 +1,94 @@
+.orderDetailContainer, .orderListContainer {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+  .orderDetailContainer {
+    margin-top: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tableHeader {
+    background: #007bff;
+    color: #ffffff;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tableRow {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tableCell {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tableCellImage {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .detailHeader {
+    margin-bottom: 10px;
+    font-size: 40px;
+    background: linear-gradient(90deg, #FF5733, #FF8D1A, #FFC300, #4CAF50, #007BFF, #8A2BE2); /* Red, orange, yellow, green, blue, purple */
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    animation: gradientAnimation 1s linear infinite;
+    transition: transform 0.3s ease;
+  }
+  
+  .detailHeader:hover {
+    transform: scale(1.05);
+  }
+  
+  .statusApproved {
+    background-color: #6ecd71; /* Green for APPROVED */
+    color: #ffffff;
+  }
+  
+  .statusPending {
+    background-color: #FFCC33; /* Yellow for PENDING */
+    color: #ffffff;
+  }
+  
+  .statusCanceled {
+    background-color: #F44336; /* Red for CANCELED */
+    color: #ffffff;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  tr:first-child.datatable {
+    background-color: #ffeeaa;
+  }
+  
+  tr:not(:first-child):nth-child(even).datatable {
+    background-color: #f5f5f5;
+  }
+  
+  tr:not(:first-child):nth-child(odd).datatable {
+    background-color: #ffeeaa;
+  }
+  
+  tr:not(:first-child):hover.datatable {
+    background-color: #dcfcfc;
+    cursor: pointer;
+  }
