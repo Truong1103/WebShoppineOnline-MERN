@@ -1,4 +1,3 @@
 - https://www.tawk.to/
 - https://dashboard.render.com/
-- https://techzonestore.onrender.com/home
 - npm install express
